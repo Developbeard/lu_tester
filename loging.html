@@ -1,35 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang=es>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Warmi Smart</title>
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" />
         <link rel="stylesheet" href="css/custom.css" type="text/css" />
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
-                <header>
-                    <div class="col-md-4">
-                        <div id="logo">
-                            <img class="img-responsive" src="img/logo-01.png" alt="Warmi Logo"></img>
+        <div class="bg-tela">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-4">
+                                <div id="logo">
+                                    <a href="login.html"><img class="img-responsive" src="img/logo-01.png" alt="Warmi Logo"/></a>
+                                </div>
+                            </div>     
                         </div>
-                    </div>            
-                </header>
-                <div class="login bg-tela">
-                    <div class="col-md-5 col-md-offset-4">
-                        <form>
-                            <input type="text" name=""/>
-                            <input type="submit" value="Submit"/>
-                        </form>
+                    </div>     
+                </div>
+            </header>
+            <div class="login content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 log">
+                            <form data-toggle="validator" role="form" action="servicios.html">
+                              <div class="form-group col-md-12">
+                                <label for="inputName" class="col-md-3 control-label">Usuario</label>
+                                <div class="form-inline row">
+                                  <div class="form-group col-md-7">
+                                    <input type="text" class="form-control" id="inputName" required="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword" class="col-md-3 control-label">Contraseña</label>
+                                <div class="form-inline row">
+                                  <div class="form-group col-md-7">
+                                    <input type="password" data-minlength="6" data-maxlength="10" maxlength="10" class="form-control" id="inputPassword" required="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group col-md-3 col-md-offset-9">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </div>
+                            </form>
+                            <p class="forgot">¿Olvidaste la contraseña?</p>
+                        </div>        
+                    </div>
+                </div>        
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-3">
+                                <div class="ic col-md-3">
+                                    <i class="icon fa fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                                <div class="dt col-md-9">
+                                    <p class="footer-title">Visit</p>
+                                    <p class="footer-cont">Av. Los Frutales 954 Urb. Sta. Magdalena Sofia, La Molina </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ic col-md-3">
+                                    <i class="icon fa fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <div class="dt col-md-9">
+                                    <p class="footer-title">Call</p>
+                                    <p class="footer-cont">T: 123-456-7890</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ic col-md-3">
+                                    <i class="icon fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="dt col-md-9">
+                                    <p class="footer-title">Contact</p>
+                                    <p class="footer-cont">info@warmytech.com</p>
+                                    <div class="col-md-6 p-0">
+                                        <div class="col-md-4 p-0">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-4 p-0">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-md-4 p-0">
+                                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ic col-md-3">
+                                    <i class="icon fa fa-copyright" aria-hidden="true"></i>
+                                </div>
+                                <div class="dt col-md-9 align-vertical">
+                                    <p class="footer-cont">© 2023 by Warmy Tech. Proudly created with Wix.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <footer>
-                </footer>                
-            </div>
+            </footer>                
         </div>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/jcode.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jcode.js"></script>
     </body>
 </html>
